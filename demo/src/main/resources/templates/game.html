@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Number Game</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+    <form th:action="@{/guess}" method="post">
+        <input type="number" name="guess" placeholder="Enter your guess">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
